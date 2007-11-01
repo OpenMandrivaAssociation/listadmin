@@ -1,5 +1,5 @@
 %define name	listadmin
-%define version	2.37
+%define version	2.40
 %define release	%mkrel 1
 
 Name:		%{name}
@@ -7,7 +7,7 @@ Version:	%{version}
 Release:	%{release}
 Summary:	Command line mailman interface
 Url:		http://heim.ifi.uio.no/kjetilho/hacks/#listadmin
-Source:		http://heim.ifi.uio.no/kjetilho/hacks/%{name}-%{version}.tar.bz2
+Source:		http://heim.ifi.uio.no/kjetilho/hacks/%{name}-%{version}.tar.gz
 License:	GPL
 Group:		File tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}
