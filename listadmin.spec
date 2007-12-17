@@ -10,7 +10,6 @@ Url:		http://heim.ifi.uio.no/kjetilho/hacks/#listadmin
 Source:		http://heim.ifi.uio.no/kjetilho/hacks/%{name}-%{version}.tar.gz
 License:	GPL
 Group:		File tools
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 listadmin is a command-line alternative to Mailman's Web interface for
