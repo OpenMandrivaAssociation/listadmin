@@ -1,6 +1,6 @@
 %define name	listadmin
 %define version	2.40
-%define release	%mkrel 4
+%define release	%mkrel 5
 
 Name:		%{name}
 Version:	%{version}
