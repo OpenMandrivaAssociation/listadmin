@@ -39,3 +39,42 @@ rm -rf %{buildroot}
 %{_mandir}/man1/*
 
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 2.40-6mdv2011.0
++ Revision: 620245
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 2.40-5mdv2010.0
++ Revision: 429858
+- rebuild
+
+* Mon Jul 28 2008 Thierry Vignaud <tv@mandriva.org> 2.40-4mdv2009.0
++ Revision: 251191
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sat Nov 17 2007 Funda Wang <fwang@mandriva.org> 2.40-2mdv2008.1
++ Revision: 109218
+- rebuild for new lzma
+
+* Thu Nov 01 2007 Guillaume Rousse <guillomovitch@mandriva.org> 2.40-1mdv2008.1
++ Revision: 104461
+- new version
+
+
+* Wed Feb 14 2007 Guillaume Rousse <guillomovitch@mandriva.org> 2.37-1mdv2007.0
++ Revision: 120978
+- new version
+
+* Sun Jan 21 2007 Guillaume Rousse <guillomovitch@mandriva.org> 2.36-1mdv2007.1
++ Revision: 111571
+- Import listadmin
+
+* Sun Jan 21 2007 Guillaume Rousse <guillomovitch@mandriva.org> 2.36-1mdv2007.1
+- first mdv release
+
