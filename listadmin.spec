@@ -1,7 +1,7 @@
 Summary:	Command line mailman interface
 Name:		listadmin
 Version:	2.40
-Release:	7
+Release:	8
 License:	Public Domain
 Group:		File tools
 Url:		http://heim.ifi.uio.no/kjetilho/hacks/#listadmin
