@@ -25,7 +25,7 @@ of cron to do routine cleaning.
 %setup -q
 
 %build
-%make_build
+
 %install
 install -d -m 755 %{buildroot}%{_bindir}
 install -d -m 755 %{buildroot}%{_mandir}/man1
