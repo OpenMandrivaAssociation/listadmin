@@ -9,6 +9,8 @@ Source0:	https://sourceforge.net/projects/listadmin/files/%{version}/listadmin-%
 Patch0:   listadmin-2.73-fix-install-dir-openmandriva.patch
 BuildArch:	noarch
 
+Requires: perl(Net::INET6Glue::INET_is_INET6)
+
 %description
 listadmin is a command-line alternative to Mailman's Web interface for
 administering mailing lists. It allows you to inspect messages or subscription
@@ -27,7 +29,6 @@ of cron to do routine cleaning.
 
 %build
 %make_build
+
 %install
-#install -d -m 755 %{buildroot}%{_bindir}
-#install -d -m 755 %{buildroot}%{_mandir}/man1
 %make_install 
