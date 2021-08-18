@@ -1,11 +1,11 @@
 Summary:	Command line mailman interface
 Name:		listadmin
-Version:	2.40
-Release:	8
+Version:	2.73
+Release:	1
 License:	Public Domain
 Group:		File tools
-Url:		http://heim.ifi.uio.no/kjetilho/hacks/#listadmin
-Source0:	http://heim.ifi.uio.no/kjetilho/hacks/%{name}-%{version}.tar.gz
+Url:		https://sourceforge.net/projects/listadmin/
+Source0:	https://sourceforge.net/projects/listadmin/files/2.73/listadmin-2.73.tar.gz/download
 BuildArch:	noarch
 
 %description
@@ -29,5 +29,4 @@ of cron to do routine cleaning.
 %install
 install -d -m 755 %{buildroot}%{_bindir}
 install -d -m 755 %{buildroot}%{_mandir}/man1
-%makeinstall
-
+%make_install
