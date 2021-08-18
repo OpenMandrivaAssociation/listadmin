@@ -16,8 +16,8 @@ when certain conditions are true. listadmin can also be configured to run out
 of cron to do routine cleaning.
 
 %files
-#{_bindir}/*
-#{_mandir}/man1/*
+%{_bindir}/*
+%{_mandir}/man1/*
 
 #----------------------------------------------------------------------------
 
@@ -27,6 +27,6 @@ of cron to do routine cleaning.
 %build
 %make_build
 %install
-#install -d -m 755 %{buildroot}%{_bindir}
-#install -d -m 755 %{buildroot}%{_mandir}/man1
+install -d -m 755 %{buildroot}%{_bindir}
+install -d -m 755 %{buildroot}%{_mandir}/man1
 %make_install
