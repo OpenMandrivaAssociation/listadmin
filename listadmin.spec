@@ -6,6 +6,7 @@ License:	Public Domain
 Group:		File tools
 Url:		https://sourceforge.net/projects/listadmin/
 Source0:	https://sourceforge.net/projects/listadmin/files/%{version}/listadmin-%{version}.tar.gz
+Patch0:   listadmin-2.73-fix-install-dir-openmandriva.patch
 BuildArch:	noarch
 
 %description
@@ -22,11 +23,11 @@ of cron to do routine cleaning.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-
+%make_build
 %install
 #install -d -m 755 %{buildroot}%{_bindir}
 #install -d -m 755 %{buildroot}%{_mandir}/man1
-%make_install PREFIX=%{buildroot}%{_prefix}
+%make_install 
