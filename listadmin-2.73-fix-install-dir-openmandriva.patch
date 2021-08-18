@@ -1,0 +1,12 @@
+diff -uraN listadmin-2.73/Makefile omv-listadmin-2.73/Makefile
+--- listadmin-2.73/Makefile	2021-08-12 03:50:25.000000000 +0200
++++ omv-listadmin-2.73/Makefile	2021-08-18 23:13:15.422243999 +0200
+@@ -4,7 +4,7 @@
+ 
+ VERSION = $(shell perl listadmin.pl --version|cut -f3 -d ' ')
+ 
+-PREFIX = /usr/local
++PREFIX = /usr
+ prefix = $(PREFIX)
+ bindir = $(prefix)/bin
+ mandir = $(prefix)/share/man
