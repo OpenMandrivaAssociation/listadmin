@@ -1,12 +1,15 @@
 Summary:	Command line mailman interface
 Name:		listadmin
-Version:	2.40
-Release:	8
+Version:	2.73
+Release:	1
 License:	Public Domain
 Group:		File tools
-Url:		http://heim.ifi.uio.no/kjetilho/hacks/#listadmin
-Source0:	http://heim.ifi.uio.no/kjetilho/hacks/%{name}-%{version}.tar.gz
+Url:		https://sourceforge.net/projects/listadmin/
+Source0:	https://sourceforge.net/projects/listadmin/files/%{version}/listadmin-%{version}.tar.gz
+Patch0:   listadmin-2.73-fix-install-dir-openmandriva.patch
 BuildArch:	noarch
+
+Requires: perl(Net::INET6Glue::INET_is_INET6)
 
 %description
 listadmin is a command-line alternative to Mailman's Web interface for
@@ -22,12 +25,10 @@ of cron to do routine cleaning.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
+%make_build
 
 %install
-install -d -m 755 %{buildroot}%{_bindir}
-install -d -m 755 %{buildroot}%{_mandir}/man1
-%makeinstall
-
+%make_install 
