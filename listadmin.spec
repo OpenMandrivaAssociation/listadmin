@@ -5,7 +5,7 @@ Release:	1
 License:	Public Domain
 Group:		File tools
 Url:		https://sourceforge.net/projects/listadmin/
-Source0:	https://sourceforge.net/projects/listadmin/files/2.73/listadmin-2.73.tar.gz/download
+Source0:	https://sourceforge.net/projects/listadmin/files/%{version}/listadmin-%{version}.tar.gz
 BuildArch:	noarch
 
 %description
