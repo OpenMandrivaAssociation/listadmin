@@ -11,6 +11,7 @@ BuildArch:	noarch
 
 Requires: perl(Net::INET6Glue::INET_is_INET6)
 
+BuildRequires:	make
 %description
 listadmin is a command-line alternative to Mailman's Web interface for
 administering mailing lists. It allows you to inspect messages or subscription
